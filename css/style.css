@@ -38,6 +38,7 @@ ul{list-style:none;padding:0}
 /* ===== Hero ===== */
 .hero{min-height:100vh;display:flex;align-items:center;padding:110px 0 70px;
   background:radial-gradient(60% 50% at 80% 20%,rgba(75,155,255,.14),transparent 70%),radial-gradient(40% 40% at 5% 90%,rgba(36,99,168,.14),transparent 70%)}
+.hero-in>*{min-width:0}
 .hero-in{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
 .tag{display:inline-flex;align-items:center;gap:10px;font-size:.72rem;font-weight:600;letter-spacing:.14em;color:var(--blue);margin-bottom:22px}
 .tag i{width:8px;height:8px;border-radius:50%;background:var(--blue);box-shadow:0 0 12px var(--blue)}
