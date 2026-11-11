@@ -35,3 +35,21 @@ buttons.forEach(btn => {
     projects.forEach(p => p.classList.toggle('hide', f !== 'all' && p.dataset.c !== f));
   });
 });
+
+/* ===== Antigravity (fundo do Hero) ===== */
+(function () {
+  const el = document.getElementById('hero-antigravity');
+  if (!el || !window.Antigravity) return;
+  // Menos partículas em telas pequenas ou aparelhos mais modestos
+  const light = window.innerWidth < 700 || (navigator.hardwareConcurrency || 8) <= 4;
+  window.Antigravity.mount(el, {
+    colors: ['#5227FF', '#4B9BFF', '#B497CF'],
+    count: light ? 800 : 1500,
+    magnetRadius: 9, ringRadius: 7, particleSize: light ? 0.5 : 0.9,
+    autoAnimate: true, colorMode: 'conic', colorSpeed: 0.05,
+    particleShape: 'capsule', particleVariance: 1, fieldStrength: 10,
+    waveAmplitude: 1, waveCount: 3, waveSpeed: 0.4, rotationSpeed: 0,
+    pulseSpeed: 3, depthFactor: 1, ambient: 0.25, lerpSpeed: 0.05,
+    interactive: true, clickBurst: true, intro: true, lightMode: false
+  });
+})();
