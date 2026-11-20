@@ -43,7 +43,7 @@ buttons.forEach(btn => {
   // Menos partículas em telas pequenas ou aparelhos mais modestos
   const light = window.innerWidth < 700 || (navigator.hardwareConcurrency || 8) <= 4;
   window.Antigravity.mount(el, {
-    colors: ['#5227FF', '#4B9BFF', '#B497CF'],
+    colors: ['#5227FF', '#FF9FFC', '#B497CF'],
     count: light ? 800 : 1500,
     magnetRadius: 9, ringRadius: 7, particleSize: light ? 0.5 : 0.9,
     autoAnimate: true, colorMode: 'conic', colorSpeed: 0.05,
